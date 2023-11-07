@@ -74,7 +74,8 @@ Visualization using SQL commands:
 ```python
 4 > 3 and 4 >= 2 
 5 < 6 or 4 <= 3 
-not 6 < 5 
+not 6 < 5
+cicms not in 'SN'
 ```
 ###### [⏪](README.md#Index)
 <p>  <br>
@@ -82,10 +83,10 @@ not 6 < 5
 
 ### Tipos de Dados
 ```python
-type(“tipo de dado”) = string 
-type(40) = int 
-type(2.0) = float 
-type(True) = bool 
+“tipo de dado” = string 
+40 = int 
+2.0 = float 
+True/False = bool 
 ```
 ###### [⏪](README.md#Index)
 <p>  <br>
@@ -113,10 +114,11 @@ Variável = Variável * 100
 
 ### Condicionais
 ```python
-if 10 < 5: 
-variavel = True 
-else: 
-variavel = False
+if anexo == 6:
+  impostos = 30
+  break
+else:
+  print('\033[33mOpção Inválida! Por favor, digite novamente.\033[m')
 ```
 ###### [⏪](README.md#Index)
 <p>  <br>
@@ -133,8 +135,11 @@ variavel = variavel + 5
 
 ### Looping (while)
 ```python
-while variavel < 10: 
-variavel = variavel + 5 
+while vc == 0:
+    try:
+        vc = float(input('Digite o Valor de Compra do Produto: R$ '))
+    except:
+        print('\033[33mValor Incorreto! Por favor, informe o valor correto\033[m')
 ```
 ###### [⏪](README.md#Index)
 <p>  <br>
@@ -142,7 +147,7 @@ variavel = variavel + 5
 
 ### Comandos de Entrada
 ```python
-Valor = int(input(“Digite um número”))
+vc = float(input('Digite o Valor de Compra do Produto: R$ '))
 ```
 ###### [⏪](README.md#Index)
 <p>  <br>
@@ -150,7 +155,7 @@ Valor = int(input(“Digite um número”))
 
 ### Comandos de Saída
 ```python
-print(“O número é {:.2f}!”.format(valor)) 
+print(f'\033[37mValor de Venda: R$ {vv:.2f}')
 ```
 ###### [⏪](README.md#Index)
 <p>  <br>
@@ -192,6 +197,7 @@ print(“Minha idade é”, self.idade)
 ### Importação de Bibliotecas
 ```python
 from Biblioteca import Função
+import Pandas as pd
 ```
 ###### [⏪](README.md#Index)
 <p>  <br>
